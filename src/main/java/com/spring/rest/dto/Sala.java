@@ -53,7 +53,7 @@ public class Sala {
 	}
 
 	@JsonIgnore
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "Caja")
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "Pelicula")
 	public List<Pelicula> getPeliculas() {
 		return peliculas;
 	}
